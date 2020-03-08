@@ -27,4 +27,4 @@ jobs:
         id: test
         shell: bash
       - run: exit 1
-        if: steps.test.outputs.result == '1'
+        if: steps.test.outputs.result != '1'
