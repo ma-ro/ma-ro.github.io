@@ -4,8 +4,9 @@ import re
 from os.path import dirname
 cwd = dirname(os.getcwd())
 
-directory = cwd + '/index.md'
+directory = './index.md'
 search = str(sys.argv[1])
+search = "##"
 
 def check_if_string_in_file(file_name, string_to_search):
 	count = 0
